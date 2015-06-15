@@ -82,7 +82,7 @@ public class Convenient extends JFrame{
 	private ImageIcon image,e0;
 	private JTabbedPane Tab;
 	Convenient(){
-		setTitle("ÆíÀÇÁ¡");
+		setTitle("í¸ì˜ì ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		FileInputStream fin = null;
 		ObjectInputStream ois = null;
@@ -108,29 +108,29 @@ public class Convenient extends JFrame{
 					fin.close();
 				}catch(IOException ioe){}
 			}
-		userColumn.addElement("ÀÌ¸§");
-		userColumn.addElement("¼ö·®");
-		userColumn.addElement("°¡°İ");
-		userColumn2.addElement("³¯Â¥");
-		userColumn2.addElement("ÁÖ¹®¹øÈ£");
-		userColumn3.addElement("ÀÌ¸§");
-		userColumn3.addElement("Á¾·ù");
-		userColumn3.addElement("°¡°İ");
-		userColumn3.addElement("¼ö·®");
-		userColumn3.addElement("ÀÎ±âµµ");
-		userColumn3.addElement("ÀÌ¹ÌÁö¸µÅ©");
-		userColumn4.addElement("Á¦Ç°ÀÌ¸§");
-		userColumn4.addElement("¼ö·®");
-		userColumn4.addElement("°¡°İ");
-		userColumn5.addElement("³¯Â¥");
-		userColumn5.addElement("ÀÌ¸§");
-		userColumn5.addElement("¼ö·®");
-		userColumn5.addElement("°¡°İ");
-		userColumn6.addElement("ÀÌ¸§");
-		userColumn6.addElement("Á¾·ù");
-		userColumn6.addElement("°¡°İ");
-		userColumn6.addElement("¼ö·®");
-		userColumn6.addElement("ÀÎ±âµµ");
+		userColumn.addElement("ì´ë¦„");
+		userColumn.addElement("ìˆ˜ëŸ‰");
+		userColumn.addElement("ê°€ê²©");
+		userColumn2.addElement("ë‚ ì§œ");
+		userColumn2.addElement("ì£¼ë¬¸ë²ˆí˜¸");
+		userColumn3.addElement("ì´ë¦„");
+		userColumn3.addElement("ì¢…ë¥˜");
+		userColumn3.addElement("ê°€ê²©");
+		userColumn3.addElement("ìˆ˜ëŸ‰");
+		userColumn3.addElement("ì¸ê¸°ë„");
+		userColumn3.addElement("ì´ë¯¸ì§€ë§í¬");
+		userColumn4.addElement("ì œí’ˆì´ë¦„");
+		userColumn4.addElement("ìˆ˜ëŸ‰");
+		userColumn4.addElement("ê°€ê²©");
+		userColumn5.addElement("ë‚ ì§œ");
+		userColumn5.addElement("ì´ë¦„");
+		userColumn5.addElement("ìˆ˜ëŸ‰");
+		userColumn5.addElement("ê°€ê²©");
+		userColumn6.addElement("ì´ë¦„");
+		userColumn6.addElement("ì¢…ë¥˜");
+		userColumn6.addElement("ê°€ê²©");
+		userColumn6.addElement("ìˆ˜ëŸ‰");
+		userColumn6.addElement("ì¸ê¸°ë„");
 		selection=0;
 		selection01=0;
 		selection2=0;
@@ -187,17 +187,17 @@ public class Convenient extends JFrame{
 		textarea0004=new JTextArea();
 		add=new JButton("Add");
 		del=new JButton("Delete");
-		info=new JButton("¿µ¼öÁõ º¸±â");
+		info=new JButton("ì˜ìˆ˜ì¦ ë³´ê¸°");
 		buy=new JButton("Buy");
-		add_Product=new JButton("Á¦Ç°Ãß°¡");
-		delete_Product=new JButton("Á¦Ç°Á¦°Å");
-		fix_Product=new JButton("Á¦Ç°¼öÁ¤");
-		fix_Receipt=new JButton("¿µ¼öÁõ¼öÁ¤");
-		search_p=new JButton("Á¦Ç°°Ë»ö");
-		search_r=new JButton("¿µ¼öÁõ°Ë»ö");
-		refund=new JButton("È¯ºÒ");
+		add_Product=new JButton("ì œí’ˆì¶”ê°€");
+		delete_Product=new JButton("ì œí’ˆì œê±°");
+		fix_Product=new JButton("ì œí’ˆìˆ˜ì •");
+		fix_Receipt=new JButton("ì˜ìˆ˜ì¦ìˆ˜ì •");
+		search_p=new JButton("ì œí’ˆê²€ìƒ‰");
+		search_r=new JButton("ì˜ìˆ˜ì¦ê²€ìƒ‰");
+		refund=new JButton("í™˜ë¶ˆ");
 		imageinfo=new JLabel(image);
-		numbers01=new JLabel("¼ö·® : ");
+		numbers01=new JLabel("ìˆ˜ëŸ‰ : ");
 		mb=new JMenuBar();
 		mm=new JMenu("Products");
 		mm2=new JMenu("Receipts");
@@ -209,7 +209,7 @@ public class Convenient extends JFrame{
 		fc=new JFileChooser();
 		numbers=new JComboBox();
 		Tab=new JTabbedPane();
-		total_price2=new JLabel("ÃÑ ±İ¾× : ");
+		total_price2=new JLabel("ì´ ê¸ˆì•¡ : ");
 		settingNum();
 		selection01=(Integer) numbers.getSelectedItem();
 		Panel.setLayout(null);
@@ -225,25 +225,25 @@ public class Convenient extends JFrame{
 		Table3.setFillsViewportHeight(true);
 		updatinglist(list01);
 		calculate();
-		list01.setBorder(new TitledBorder("¼±ÅÃ"));
-		PL02.setBorder(new TitledBorder("¿µ¼öÁõ"));
-		textarea01.setBorder(new TitledBorder("Á¦Ç°¸í"));
+		list01.setBorder(new TitledBorder("ì„ íƒ"));
+		PL02.setBorder(new TitledBorder("ì˜ìˆ˜ì¦"));
+		textarea01.setBorder(new TitledBorder("ì œí’ˆëª…"));
 		textarea01.setEditable(false);
-		textarea02.setBorder(new TitledBorder("°¡°İ"));
+		textarea02.setBorder(new TitledBorder("ê°€ê²©"));
 		textarea02.setEditable(false);
-		textarea03.setBorder(new TitledBorder("Á¾·ù"));
+		textarea03.setBorder(new TitledBorder("ì¢…ë¥˜"));
 		textarea03.setEditable(false);
-		textarea04.setBorder(new TitledBorder("¼ö·®"));
+		textarea04.setBorder(new TitledBorder("ìˆ˜ëŸ‰"));
 		textarea04.setEditable(false);
-		textarea05.setBorder(new TitledBorder("ÀÎ±âµµ"));
+		textarea05.setBorder(new TitledBorder("ì¸ê¸°ë„"));
 		textarea05.setEditable(false);
-		textarea0001.setBorder(new TitledBorder("ÇöÀç ÃÑ ¸ÅÃâ"));
+		textarea0001.setBorder(new TitledBorder("í˜„ì¬ ì´ ë§¤ì¶œ"));
 		textarea0001.setEditable(false);
-		textarea0002.setBorder(new TitledBorder("ÃÑ °í°´ ¼ö"));
+		textarea0002.setBorder(new TitledBorder("ì´ ê³ ê° ìˆ˜"));
 		textarea0002.setEditable(false);
-		textarea0003.setBorder(new TitledBorder("ÇöÀç Á¦Ç°¼ö"));
+		textarea0003.setBorder(new TitledBorder("í˜„ì¬ ì œí’ˆìˆ˜"));
 		textarea0003.setEditable(false);
-		imageinfo.setBorder(new TitledBorder("»çÁø"));
+		imageinfo.setBorder(new TitledBorder("ì‚¬ì§„"));
 		numbers01.setBorder(new TitledBorder(""));
 		PL.setBounds(10,260,200,400);
 		add.setBounds(5,665,110,30);
@@ -312,9 +312,9 @@ public class Convenient extends JFrame{
 		Panel.add(numbers);
 		Panel.add(numbers01);
 		add(Tab);
-		Tab.addTab("°è»ê",Panel);
-		Tab.addTab("¿µ¼öÁõ",Panel3);
-		Tab.addTab("Á¦Ç°¸ñ·Ï",Panel4);
+		Tab.addTab("ê³„ì‚°",Panel);
+		Tab.addTab("ì˜ìˆ˜ì¦",Panel3);
+		Tab.addTab("ì œí’ˆëª©ë¡",Panel4);
 		Panel.add(Panel2);
 		list01.addListSelectionListener(new ListSelectionListener(){
 			@Override
@@ -428,6 +428,8 @@ public class Convenient extends JFrame{
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				Product_info();
+				settingNum();
+				numbers.updateUI();
 			}
 
 			@Override
@@ -445,7 +447,6 @@ public class Convenient extends JFrame{
 			@Override
 			public void mousePressed(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				
 			}
 
 			@Override
@@ -461,13 +462,13 @@ public class Convenient extends JFrame{
 					int size=0;
 					if(str01.equals(Products.get(i).Name)){
 						Object obj=numbers.getSelectedItem();
-						selection01=(Integer) obj; //¼ö·®
+						selection01=(Integer) obj; //ìˆ˜ëŸ‰
 						int count2=0;
 						if(count2==0){
 							size=selection01;
 						}
 						int Counting=Table.getRowCount();
-						for(int j=0;j<Counting;j++){ //°°Àº Á¦
+						for(int j=0;j<Counting;j++){ //ê°™ì€ ì œ
 							if(((String)Table.getValueAt(j,0)).equals(str01)){
 								size=StringToInt((String)Table.getValueAt(j,1))+selection01;
 								model.removeRow(j);
@@ -514,7 +515,7 @@ public class Convenient extends JFrame{
 			public void actionPerformed(ActionEvent e){
 				int total=0;
 				Frame1 = new JFrame();
-				Frame1.setTitle("¿µ¼öÁõ");
+				Frame1.setTitle("ì˜ìˆ˜ì¦");
 				Frame1.setSize(400, 310);
 				JScrollPane PL05=new JScrollPane(Table4);
 				Table4.setFillsViewportHeight(true);
@@ -535,7 +536,7 @@ public class Convenient extends JFrame{
 			}
 		});
 		buy.addActionListener(new ActionListener(){
-			SimpleDateFormat Date1 =new SimpleDateFormat("yyyy/MM/dd/HH½ÃmmºĞssÃÊ",Locale.KOREA); //
+			SimpleDateFormat Date1 =new SimpleDateFormat("yyyy/MM/dd/HHì‹œmmë¶„ssì´ˆ",Locale.KOREA); //
 			public void actionPerformed(ActionEvent e){
 				if(Table.getRowCount()!=0){
 					Vector<String> Names = new Vector<String>();
@@ -612,7 +613,7 @@ public class Convenient extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				Frame4=new JFrame();
-				Frame4.setTitle("¿µ¼öÁõ°Ë»ö");
+				Frame4.setTitle("ì˜ìˆ˜ì¦ê²€ìƒ‰");
 				Frame4.setSize(600,660);
 				Container contentPane = Frame4.getContentPane();
 				model5 = new DefaultTableModel(userColumn5,0){
@@ -620,9 +621,9 @@ public class Convenient extends JFrame{
 						return false;
 					}
 				};
-				Table5=new JTable(model5);//³¯Â¥ ÀÌ¸§ ¼ö·® °¡°İ
+				Table5=new JTable(model5);//ë‚ ì§œ ì´ë¦„ ìˆ˜ëŸ‰ ê°€ê²©
 				JScrollPane PL06 = new JScrollPane(Table5);
-				search_r1=new JButton("ÁÖ¹®¹øÈ£°Ë»ö");
+				search_r1=new JButton("ì£¼ë¬¸ë²ˆí˜¸ê²€ìƒ‰");
 				Frame4.setLayout(null);
 				PL06.setBounds(0,0,600,600);
 				search_r1.setBounds(500,600,100,40);
@@ -634,13 +635,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("ÁÖ¹®¹øÈ£°Ë»ö");
+						Frame3.setTitle("ì£¼ë¬¸ë²ˆí˜¸ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_r3=new JButton("°Ë»ö");
+						search_r3=new JButton("ê²€ìƒ‰");
 						search_r3.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_r3);
@@ -683,7 +684,7 @@ public class Convenient extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				Frame4=new JFrame();
-				Frame4.setTitle("Á¦Ç°°Ë»ö");
+				Frame4.setTitle("ì œí’ˆê²€ìƒ‰");
 				Frame4.setSize(600,660);
 				Container contentPane = Frame4.getContentPane();
 				model6 = new DefaultTableModel(userColumn6,0){
@@ -691,13 +692,13 @@ public class Convenient extends JFrame{
 						return false;
 					}
 				};
-				Table6=new JTable(model6);//³¯Â¥ ÀÌ¸§ ¼ö·® °¡°İ
+				Table6=new JTable(model6);//ë‚ ì§œ ì´ë¦„ ìˆ˜ëŸ‰ ê°€ê²©
 				JScrollPane PL07 = new JScrollPane(Table6);
-				search_p1=new JButton("ÀÌ¸§°Ë»ö");
-				search_p2=new JButton("Á¾·ù°Ë»ö");
-				search_p3=new JButton("°¡°İ°Ë»ö");
-				search_p4=new JButton("¼ö·®°Ë»ö");
-				search_p5=new JButton("ÀÎ±âµµ°Ë»ö");
+				search_p1=new JButton("ì´ë¦„ê²€ìƒ‰");
+				search_p2=new JButton("ì¢…ë¥˜ê²€ìƒ‰");
+				search_p3=new JButton("ê°€ê²©ê²€ìƒ‰");
+				search_p4=new JButton("ìˆ˜ëŸ‰ê²€ìƒ‰");
+				search_p5=new JButton("ì¸ê¸°ë„ê²€ìƒ‰");
 				Frame4.setLayout(null);
 				PL07.setBounds(0,0,600,600);
 				search_p5.setBounds(450,600,100,40);
@@ -717,13 +718,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("ÀÌ¸§°Ë»ö");
+						Frame3.setTitle("ì´ë¦„ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_p6=new JButton("°Ë»ö");
+						search_p6=new JButton("ê²€ìƒ‰");
 						search_p6.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_p6);
@@ -759,13 +760,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("Á¾·ù°Ë»ö");
+						Frame3.setTitle("ì¢…ë¥˜ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_p6=new JButton("°Ë»ö");
+						search_p6=new JButton("ê²€ìƒ‰");
 						search_p6.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_p6);
@@ -801,13 +802,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("°¡°İ°Ë»ö");
+						Frame3.setTitle("ê°€ê²©ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_p6=new JButton("°Ë»ö");
+						search_p6=new JButton("ê²€ìƒ‰");
 						search_p6.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_p6);
@@ -843,13 +844,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("¼ö·®°Ë»ö");
+						Frame3.setTitle("ìˆ˜ëŸ‰ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_p6=new JButton("°Ë»ö");
+						search_p6=new JButton("ê²€ìƒ‰");
 						search_p6.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_p6);
@@ -885,13 +886,13 @@ public class Convenient extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						Frame3=new JFrame();
-						Frame3.setTitle("ÀÎ±âµµ°Ë»ö");
+						Frame3.setTitle("ì¸ê¸°ë„ê²€ìƒ‰");
 						Frame3.setSize(400, 420);
 						textarea101=new JTextArea();
 						Container contentPane2 = Frame3.getContentPane();
 						Frame3.setLayout(null);
 						textarea101.setBounds(0,0,400,360);
-						search_p6=new JButton("°Ë»ö");
+						search_p6=new JButton("ê²€ìƒ‰");
 						search_p6.setBounds(340,360,60,40);
 						contentPane2.add(textarea101);
 						contentPane2.add(search_p6);
@@ -929,8 +930,8 @@ public class Convenient extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Frame1 = new JFrame();
-				P_all=new JButton("Ãß°¡");
-				P_all2=new JButton("ÀÌ¹ÌÁö¼±ÅÃ");
+				P_all=new JButton("ì¶”ê°€");
+				P_all2=new JButton("ì´ë¯¸ì§€ì„ íƒ");
 				a01=textarea001.getText().toString();
 				b=textarea003.getText().toString();
 				f=textarea005.getText().toString();
@@ -942,7 +943,7 @@ public class Convenient extends JFrame{
 				if(textarea004.getText().equals(null)==false && isNumeric(textarea004.getText())){
 					d=StringToInt(textarea004.getText().toString());
 				}
-				Frame1.setTitle("Á¦Ç°Ãß°¡"); 
+				Frame1.setTitle("ì œí’ˆì¶”ê°€"); 
 				Container contentPane = Frame1.getContentPane();
 				Edit_textarea(1);
 				textarea001.setText("");
@@ -950,12 +951,12 @@ public class Convenient extends JFrame{
 				textarea003.setText("");
 				textarea004.setText("");
 				textarea005.setText("");
-				textarea001.setBorder(new TitledBorder("Á¦Ç°¸í"));
-				textarea002.setBorder(new TitledBorder("°¡°İ"));
+				textarea001.setBorder(new TitledBorder("ì œí’ˆëª…"));
+				textarea002.setBorder(new TitledBorder("ê°€ê²©"));
 				Frame1.setLayout(null);
-				textarea003.setBorder(new TitledBorder("Á¾·ù"));
-				textarea004.setBorder(new TitledBorder("¼ö·®"));
-				textarea005.setBorder(new TitledBorder("ÀÎ±âµµ"));
+				textarea003.setBorder(new TitledBorder("ì¢…ë¥˜"));
+				textarea004.setBorder(new TitledBorder("ìˆ˜ëŸ‰"));
+				textarea005.setBorder(new TitledBorder("ì¸ê¸°ë„"));
 				textarea001.setBounds(5,10,103,40);
 				textarea002.setBounds(108,10,103,40);
 				textarea003.setBounds(211,10,103,40);
@@ -1002,8 +1003,8 @@ public class Convenient extends JFrame{
 						if(isthere(a01,b,c,d,e0,f)==true){
 							Products.add(new Product(a01,b,c,d,e0,f));
 							Frame2=new JFrame();
-							Frame2.setTitle("¾Ë¸²");
-							textarea006.setText("\n                  Ãß°¡ µÇ¾ú½À´Ï´Ù.");
+							Frame2.setTitle("ì•Œë¦¼");
+							textarea006.setText("\n                  ì¶”ê°€ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							textarea006.setEditable(false);
 							Container c = Frame2.getContentPane();
 							c.add(textarea006);
@@ -1022,8 +1023,8 @@ public class Convenient extends JFrame{
 						}
 						else{
 							Frame2=new JFrame();
-							Frame2.setTitle("¾Ë¸²");
-							textarea006.setText("\n             ¸ğµÎ ÀÔ·Â,Ãß°¡ÇØÁÖ¼¼¿ä.");
+							Frame2.setTitle("ì•Œë¦¼");
+							textarea006.setText("\n             ëª¨ë‘ ì…ë ¥,ì¶”ê°€í•´ì£¼ì„¸ìš”.");
 							textarea006.setEditable(false);
 							Container c = Frame2.getContentPane();
 							c.add(textarea006);
@@ -1045,10 +1046,10 @@ public class Convenient extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				Frame1 = new JFrame();
-				P_all=new JButton("Á¦°Å");
-				Ask=new JLabel("Á¤¸» Á¦°ÅÇÏ½Ã°Ú½À´Ï±î?");
+				P_all=new JButton("ì œê±°");
+				Ask=new JLabel("ì •ë§ ì œê±°í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 				Image00=new JLabel(Products.get(selection3).Image);
-				Frame1.setTitle("Á¦Ç°Á¦°Å"); 
+				Frame1.setTitle("ì œí’ˆì œê±°"); 
 				Container contentPane = Frame1.getContentPane();
 				Image img=Products.get(selection3).Image.getImage();
 				Image00.setIcon(resizeImg(img));
@@ -1058,13 +1059,13 @@ public class Convenient extends JFrame{
 				textarea003.setText(Products.get(selection3).Kind);
 				textarea004.setText(IntToString(Products.get(selection3).Amount));
 				textarea005.setText(Products.get(selection3).Popularity);
-				textarea001.setBorder(new TitledBorder("Á¦Ç°¸í"));
-				textarea002.setBorder(new TitledBorder("°¡°İ"));
+				textarea001.setBorder(new TitledBorder("ì œí’ˆëª…"));
+				textarea002.setBorder(new TitledBorder("ê°€ê²©"));
 				Frame1.setLayout(null);
-				textarea003.setBorder(new TitledBorder("Á¾·ù"));
-				textarea004.setBorder(new TitledBorder("¼ö·®"));
-				textarea005.setBorder(new TitledBorder("ÀÎ±âµµ"));
-				Image00.setBorder(new TitledBorder("Á¦Ç°ÀÌ¹ÌÁö"));
+				textarea003.setBorder(new TitledBorder("ì¢…ë¥˜"));
+				textarea004.setBorder(new TitledBorder("ìˆ˜ëŸ‰"));
+				textarea005.setBorder(new TitledBorder("ì¸ê¸°ë„"));
+				Image00.setBorder(new TitledBorder("ì œí’ˆì´ë¯¸ì§€"));
 				textarea001.setBounds(13,410,113,40);
 				textarea002.setBounds(126,410,113,40);
 				textarea003.setBounds(239,410,113,40);
@@ -1088,8 +1089,8 @@ public class Convenient extends JFrame{
 						// TODO Auto-generated method stub
 						Products.remove(selection3);
 						Frame2=new JFrame();
-						Frame2.setTitle("¾Ë¸²");
-						textarea006.setText("\n                  Á¦°Å µÇ¾ú½À´Ï´Ù.");
+						Frame2.setTitle("ì•Œë¦¼");
+						textarea006.setText("\n                  ì œê±° ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						textarea006.setEditable(false);
 						Container c = Frame2.getContentPane();
 						c.add(textarea006);
@@ -1118,26 +1119,26 @@ public class Convenient extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				Frame1 = new JFrame();
-				P_all=new JButton("¼öÁ¤");
+				P_all=new JButton("ìˆ˜ì •");
 				Image00=new JLabel(Products.get(selection3).Image);
-				Frame1.setTitle("Á¦Ç°¼öÁ¤"); 
+				Frame1.setTitle("ì œí’ˆìˆ˜ì •"); 
 				Container contentPane = Frame1.getContentPane();
 				Image img=Products.get(selection3).Image.getImage();
 				Image00.setIcon(resizeImg(img));
-				P_all2=new JButton("ÀÌ¹ÌÁöº¯°æ");
+				P_all2=new JButton("ì´ë¯¸ì§€ë³€ê²½");
 				Edit_textarea(1);
 				textarea001.setText(Products.get(selection3).Name);
 				textarea002.setText(IntToString(Products.get(selection3).Price));
 				textarea003.setText(Products.get(selection3).Kind);
 				textarea004.setText(IntToString(Products.get(selection3).Amount));
 				textarea005.setText(Products.get(selection3).Popularity);
-				textarea001.setBorder(new TitledBorder("Á¦Ç°¸í"));
-				textarea002.setBorder(new TitledBorder("°¡°İ"));
+				textarea001.setBorder(new TitledBorder("ì œí’ˆëª…"));
+				textarea002.setBorder(new TitledBorder("ê°€ê²©"));
 				Frame1.setLayout(null);
-				textarea003.setBorder(new TitledBorder("Á¾·ù"));
-				textarea004.setBorder(new TitledBorder("¼ö·®"));
-				textarea005.setBorder(new TitledBorder("ÀÎ±âµµ"));
-				Image00.setBorder(new TitledBorder("Á¦Ç°ÀÌ¹ÌÁö"));
+				textarea003.setBorder(new TitledBorder("ì¢…ë¥˜"));
+				textarea004.setBorder(new TitledBorder("ìˆ˜ëŸ‰"));
+				textarea005.setBorder(new TitledBorder("ì¸ê¸°ë„"));
+				Image00.setBorder(new TitledBorder("ì œí’ˆì´ë¯¸ì§€"));
 				textarea001.setBounds(13,410,113,40);
 				textarea002.setBounds(126,410,113,40);
 				textarea003.setBounds(239,410,113,40);
@@ -1198,8 +1199,8 @@ public class Convenient extends JFrame{
 							}
 							Products.set(selection3, new Product(a01,b,c,d,e0,f));
 							Frame2=new JFrame();
-							Frame2.setTitle("¾Ë¸²");
-							textarea006.setText("\n                  ¼öÁ¤ µÇ¾ú½À´Ï´Ù.");
+							Frame2.setTitle("ì•Œë¦¼");
+							textarea006.setText("\n                  ìˆ˜ì • ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							textarea006.setEditable(false);
 							Container c = Frame2.getContentPane();
 							c.add(textarea006);
@@ -1216,8 +1217,8 @@ public class Convenient extends JFrame{
 						}
 						else{
 							Frame2=new JFrame();
-							Frame2.setTitle("¾Ë¸²");
-							textarea006.setText("\n             ¸ğµÎ ÀÔ·Â,Ãß°¡ÇØÁÖ¼¼¿ä.");
+							Frame2.setTitle("ì•Œë¦¼");
+							textarea006.setText("\n             ëª¨ë‘ ì…ë ¥,ì¶”ê°€í•´ì£¼ì„¸ìš”.");
 							textarea006.setEditable(false);
 							Container c = Frame2.getContentPane();
 							c.add(textarea006);
@@ -1278,7 +1279,7 @@ public class Convenient extends JFrame{
 			            oos = new ObjectOutputStream(fout);
 			            oos.writeObject(Products);
 			            oos.reset();
-			            System.out.println("ÀúÀåµÇ¾ú½À´Ï´Ù");
+			            System.out.println("ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤");
 			        }catch(Exception ex){
 			        }finally{
 			        	try{
@@ -1309,7 +1310,7 @@ public class Convenient extends JFrame{
 		            oos = new ObjectOutputStream(fout);
 		            oos.writeObject(Receipts);
 		            oos.reset();
-		            System.out.println("ÀúÀåµÇ¾ú½À´Ï´Ù");
+		            System.out.println("ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤");
 		        }catch(Exception ex){
 		        }finally{
 		            try{
@@ -1335,6 +1336,7 @@ public class Convenient extends JFrame{
 						while(it.hasNext()){
 							Receipt nb = (Receipt)it.next();
 							Receipts.add(nb);
+							count++;
 						}
 						allProduct_model2();
 						calculate();
@@ -1357,11 +1359,19 @@ public class Convenient extends JFrame{
 	
 	public void settingNum(){
 		numbers.removeAllItems();
-		for(int i=0;i<Products.get(selection).Amount;i++){
+		selection01=list01.getSelectedIndex();
+		System.out.println(selection01);
+		if(selection01==-1){
+			selection01=0;
+		}
+		if(selection01==-1){
+			selection=0;
+		}
+		for(int i=0;i<Products.get(selection01).Amount;i++){
 			numbers.addItem(i+1);
 			numbers.setEnabled(true);
 		}
-		if(Products.get(selection).Amount==0){
+		if(Products.get(selection01).Amount==0){
 			numbers.addItem(0);
 			numbers.setEnabled(false);
 		}
