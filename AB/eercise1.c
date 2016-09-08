@@ -2,9 +2,9 @@
 int main(void){
 int press = 0;
 scanf("%d",&press);
-for(press != 1){
-scanf("%d",&press);
-}
-printf("jww0227@hanyang.ac.kr.");
+if(press==1)
+  printf("jww0227@hanyang.ac.kr.");
+if(press==2)
+  printf("01051996349");
 return 0;
 }
